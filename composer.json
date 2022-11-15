@@ -1,0 +1,7 @@
+{
+    "require": {
+        "twilio/sdk": "^6.37",
+        "jgrossi/corcel": "^5.1"
+    }
+    
+}

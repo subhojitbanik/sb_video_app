@@ -1,0 +1,190 @@
+.tooltip {
+  position: relative !important;
+  display: inline-block !important;
+  opacity: 1 !important;
+  margin: 0 5px !important;
+  z-index: 1 !important;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.wid-50 {
+  width: 48%;
+  margin: 0px 1%;
+}
+.content-copy {
+  margin: 20px auto;
+}
+.session_policy h3 {
+  color: #034279;
+  text-decoration: underline #fcb12b;
+}
+.fg_cst_va h1, .fg_cst_va h2 {
+  font-size: 30px;
+  word-break: break-all;
+  color: #fcb12b !important;
+}
+
+
+
+
+
+
+
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+float: left;
+width: 25%;
+padding: 0 10px;
+}
+
+.fg_cst_va h5, .fg_cst_va h4, .fg_cst_va h3, .fg_cst_va p {
+  color: white !important;
+  margin: 8px 10px !important;
+}
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+#icon-blur {
+  transition: opacity 0.6s ease-out;
+  z-index: 9999;
+}
+
+.inactive {
+  opacity: 0;
+}
+
+
+
+
+
+
+/* Style the counter cards */
+.fg_cst_va .card {
+box-shadow:  10px 10px #fcb12b;
+padding: 10px;
+text-align: left;
+/* background-color: #f1f1f1; */
+margin-top:20px;
+/* height: 280px; */
+background-color: #042d59;
+border-radius: 26px;
+
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.video-participant.client {
+		position: absolute;
+		right: 15px;
+		top: 25%;
+	}
+	button#connect-sb-screen-share {
+		display: none;
+	}
+
+
+
+}
