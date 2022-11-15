@@ -156,8 +156,8 @@ function create_meeting_room_form()
     // var_dump($results)
     // // Find your Account SID and Auth Token at twilio.com/console
     // // and set the environment variables. See http://twil.io/secure
-    $sid = "AC9c033c4d217dbbd6ccbab7cde26f1f82";
-    $token = "c5a06e2f29b75e31c30670545e174525";
+    $sid = "YOUR KEY";
+    $token = "YOUR KEY";
     $twilio = new Client($sid, $token);
     if (isset($_GET['submit'])) {
         $uni_room_name =  $rmname;
@@ -330,9 +330,9 @@ add_shortcode('sb-join-meeting-form', 'sb_join_meeting');
 
 function generate_access_token()
 {
-    $twilioAccountSid = 'AC9c033c4d217dbbd6ccbab7cde26f1f82';
-    $twilioApiKey = 'SKfc3420064d81057235d9602bea61b7be';
-    $twilioApiSecret = 'ZTFrwwhNbCBquqg9oMgugAW4SnXx9E9T';
+    $twilioAccountSid = 'YOUR KEY';
+    $twilioApiKey = 'YOUR KEY';
+    $twilioApiSecret = 'YOUR KEY';
     // Required for Video grant
     $_SESSION["rname"] = $_GET['rname'];
     $_SESSION["identity"] = $_GET['token'];
@@ -1133,8 +1133,8 @@ add_action('wp_ajax_nopriv_update_room_sid', 'update_room_sid_cb');
 
 function update_room_sid_cb()
 {
-    $sid = "AC9c033c4d217dbbd6ccbab7cde26f1f82";
-    $token = "c5a06e2f29b75e31c30670545e174525";
+    $sid = "YOUR KEY";
+    $token = "YOUR KEY";
     $twilio = new Client($sid, $token);
 
     if (isset($_POST['room_name'])) {
@@ -1168,8 +1168,8 @@ function participant_details_fn()
     ob_start();
         //var_dump($results);
 
-    $sid = "AC9c033c4d217dbbd6ccbab7cde26f1f82";
-    $token = "c5a06e2f29b75e31c30670545e174525";
+    $sid = "YOUR KEY";
+    $token = "YOUR KEY";
     $twilio = new Client($sid, $token);
     //date_default_timezone_set("Asia/Kolkata"); 
     foreach ($results as $value) {
